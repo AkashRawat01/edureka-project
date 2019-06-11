@@ -1,7 +1,7 @@
--From devopsedu/webapp
--
--ADD proj /var/www/code/website/
--
--RUN rm /var/www/code/website/index.html
--
--CMD apachectl -D FOREGROUND
+From devopsedu/webapp
+
+ADD proj /var/www/code/website/
+
+RUN rm /var/www/code/website/index.html
+
+CMD apachectl -D FOREGROUND
