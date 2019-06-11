@@ -1,6 +1,6 @@
 -FROM devopsedu/webapp
 -
--ADD proj /var/www/code
+-ADD proj /var/www/code/website/
 -
 -RUN rm /var/www/code/website/index.html
 -
