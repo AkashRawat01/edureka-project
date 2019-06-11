@@ -1,7 +1,6 @@
-From devopsedu/webapp
-
-ADD proj /var/www/code/website/
-
-RUN rm /var/www/code/website/index.html
-
-CMD apachectl -D FOREGROUND
+From tomcat
+ADD index.html /usr/local/tomcat/webapps
+ADD proj /var/www/code/website/html
+RUN rm /var/www/code/website/html/index.html
+CMD "catalina.sh" "run"
+EXPOSE 8083
