@@ -2,6 +2,6 @@ From devopsedu/webapp
 
 ADD /var/www/code/website /var/www/html
 
-RUN rm /var/www/html/index.html
+RUN rm /var/www/html/website/index.html
 
 CMD apachectl -D FOREGROUND
